@@ -75,7 +75,7 @@ export default function Nav() {
 								<NavLink key={link}>{link}</NavLink>
 							))}
 							{/* show loginmodal when clicked  */}
-							<Button
+							{/* <Button
 								colorScheme="yellow"
 								variant="contain"
 
@@ -84,11 +84,11 @@ export default function Nav() {
 								// borderColor="black"
 							>
 								Login
-							</Button>
+							</Button> */}
 						</HStack>
 
 						<Flex alignItems={"center"}>
-							<Stack direction={"row"}>
+							<Stack direction={"row"} marginLeft={2}>
 								<Button onClick={toggleColorMode}>
 									{colorMode === "light" ? <MoonIcon /> : <SunIcon />}
 								</Button>
